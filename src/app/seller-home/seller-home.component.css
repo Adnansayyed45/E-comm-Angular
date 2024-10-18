@@ -1,17 +1,54 @@
-table{
+/* General Table Styling */
+table {
+    width: 100%; /* Ensure the table takes full width */
     text-align: left;
-    color: blueviolet;
+    color: #333; /* Changed text color to dark gray for a more formal look */
     border-collapse: collapse;
+    font-size: 16px; /* Adjusted font size for better readability */
+    margin-bottom: 20px; /* Added margin for spacing */
 }
-img{
+
+table th, table td {
+    border: 1px solid #ddd; /* Lighter border for a more subtle, formal appearance */
+    padding: 12px 15px; /* Slightly increased padding for better spacing */
+    min-width: 160px;
+    vertical-align: middle; /* Aligns text vertically in the center */
+}
+
+table th {
+    background-color: #f4f4f4; /* Light background for header */
+    color: #555; /* Darker text color for header */
+    font-weight: 600; /* Bold font for emphasis */
+    text-transform: uppercase; /* Uppercase for formal look */
+}
+
+table td {
+    background-color: #fff; /* White background for clarity */
+    color: #333;
+}
+
+table tr:nth-child(even) td {
+    background-color: #f9f9f9; /* Alternating row colors for readability */
+}
+
+/* Image Styling */
+img {
     height: 100px;
     width: 100px;
+    object-fit: cover; /* Ensures images maintain aspect ratio and are fully contained */
+    border-radius: 8px; /* Slightly rounded corners for a clean look */
 }
-table td , table th{
-    border: 1px solid blueviolet;
-    padding: 10px;
-    min-width: 160pxs;
-}
-.adjust-update-link{
+
+/* Link Adjustments */
+.adjust-update-link {
     margin-left: 10px;
+    color: #8A2BE2; /* Consistent color with the theme */
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.adjust-update-link:hover {
+    color: #6a1bb8; /* Slightly darker on hover */
+    text-decoration: underline; /* Underline for clarity */
+    transition: color 0.3s ease, text-decoration 0.3s ease;
 }

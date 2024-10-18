@@ -1,0 +1,174 @@
+/* General styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f9; /* Soft light gray background */
+    margin: 0;
+    padding: 0;
+}
+  
+section.contact {
+    padding: 40px;
+    background-color: #ffffff; /* Clean white form background */
+    border-radius: 12px;
+    max-width: 600px; /* Slightly increased form width */
+    margin: 40px auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+} 
+
+.contact h2.heading {
+    text-align: center;
+    color: #333; /* Darker heading color for better readability */
+    font-size: 2.2em; /* Slightly larger heading */
+    margin-bottom: 25px;
+    position: relative;
+    animation: slideIn 0.8s ease-in-out; /* Heading slide-in animation */
+}
+
+.contact h2 span {
+    color: blue; /* Vibrant pink for emphasis */
+}
+
+/* Success message styling */
+.success-message {
+    background-color: #4caf50; /* Green background for success */
+    color: white;
+    text-align: center;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    font-weight: bold;
+    animation: slideDown 0.6s ease-in-out; /* Slide down on appearance */
+}
+  
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Increased gap for better spacing */
+}
+  
+.contact .input-box {
+    display: flex;
+    flex-direction: column;
+}
+  
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 12px; /* Increased padding */
+    border: 1px solid #ccc; /* Softer border */
+    border-radius: 8px;
+    outline: none;
+    background-color: #f9f9f9; /* Light gray input background */
+    color: #333; /* Darker text for better readability */
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+  
+.contact input::placeholder,
+.contact textarea::placeholder {
+    color: #999; /* Subtle gray placeholder color */
+}
+  
+.contact input:focus,
+.contact textarea:focus {
+    border-color: #4caf50; /* Green border on focus */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.4); /* Green glow */
+}
+
+.contact textarea {
+    resize: none;
+    height: 120px; /* Increased textarea height */
+}
+  
+.contact button.btn {
+    padding: 12px;
+    background-color: #4caf50; /* Green submit button */
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+  
+.contact button.btn:hover {
+    background-color: #388e3c; /* Darker green on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.contact button.btn:active {
+    background-color: #2e7d32; /* Even darker green on click */
+    transform: translateY(1px); /* Button presses down on click */
+}
+  
+/* Validation messages */
+.contact small {
+    color: #ff0000; /* Red error message */
+    font-size: 1rem;
+    margin-top: 3px;
+}
+  
+/* Success and error messages */
+.contact .success,
+.contact .error {
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1em;
+}
+  
+.contact .success {
+    background-color: #14ff1b;
+    color: white;
+    
+}
+
+.contact .error {
+    background-color: #f44336; /* Bright red for error */
+    color: white;
+}
+  
+/* Responsive design */
+@media (max-width: 768px) {
+    .contact {
+      padding: 30px;
+      max-width: 100%;
+    }
+}
+  
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.85);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

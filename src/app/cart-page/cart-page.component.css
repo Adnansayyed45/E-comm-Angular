@@ -4,9 +4,12 @@
 }
 .cart-page h1{
     text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+ 
 }
 .details {
-   
+    /* display: flex;
+    justify-content: space-between; */
 }
 .details img{
     height: 100px;

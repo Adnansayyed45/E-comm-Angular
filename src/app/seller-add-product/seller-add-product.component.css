@@ -1,7 +1,78 @@
-h1{
-    color: blueviolet;
+/* General styling for the form container */
+.add-product {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 30px;
+    width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #6a1b9a;
     text-align: center;
-}
-.add-product{
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling the message paragraph */
+  .message-p {
+    color: green;
     text-align: center;
-}
+    font-size: 1.1em;
+    margin-bottom: 20px;
+  }
+  
+  /* General input styling */
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+    background-color: #fdfdfd;
+    transition: all 0.3s ease;
+  }
+  
+  /* Input focus effect */
+  .form-input:focus {
+    border-color: #6a1b9a;
+    box-shadow: 0 0 5px rgba(106, 27, 154, 0.3);
+    outline: none;
+  }
+  
+  /* Styling for the textarea */
+  textarea.form-input {
+    height: 100px;
+    resize: none;
+  }
+  
+  /* Submit button styling */
+  .form-button {
+    background-color: #6a1b9a;
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  /* Button hover effect */
+  .form-button:hover {
+    background-color: #4a0072;
+  }
+  
+  /* Media query for responsive design */
+  @media (max-width: 500px) {
+    .add-product {
+      width: 100%;
+      padding: 20px;
+    }
+  }
+  

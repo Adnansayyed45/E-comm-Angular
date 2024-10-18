@@ -4,108 +4,159 @@
       "name": "sam sidhu",
       "email": "sam@seller.com",
       "password": "abc@123",
-      "id": 2
+      "id": "2"
     },
     {
       "name": "peter",
       "password": "abc@123",
       "email": "peter@test.com",
-      "id": 3
+      "id": "3"
     },
     {
       "name": "bruce",
       "password": "abc@123",
       "email": "bruce@test.com",
-      "id": 4
+      "id": "4"
     },
     {
       "name": "anil",
       "password": "abc123",
       "email": "anil@test.com",
-      "id": 5
+      "id": "5"
     },
     {
       "name": "alena",
       "password": "abc123",
       "email": "alena@test.com",
-      "id": 6
+      "id": "6"
     },
     {
       "name": "sam",
       "password": "abc@123",
       "email": "sam@test.com",
-      "id": 7
+      "id": "7"
     },
     {
       "name": "bhasker",
       "password": "abc@123",
       "email": "bhasker@test.com",
-      "id": 8
+      "id": "8"
+    },
+    {
+      "id": "0602",
+      "name": "Adnan sayyed",
+      "password": "121",
+      "email": "sadnan45786@gmail.com"
+    },
+    {
+      "id": "6469",
+      "name": "Adnan sayyed",
+      "password": "121",
+      "email": "sadnan45786@gmail.com"
+    },
+    {
+      "id": "5cc9",
+      "name": "Adnan sayyed",
+      "password": "121",
+      "email": "sadnan45786@gmail.com"
+    },
+    {
+      "id": "0ff1",
+      "name": "Adnan sayyed",
+      "password": "121",
+      "email": "sadnan45786@gmail.com"
+    },
+    {
+      "id": "54fb",
+      "name": "adnan",
+      "password": "adnan",
+      "email": "sadnan45786@gmail.com"
+    },
+    {
+      "id": "28d8",
+      "name": "Adnan sayyed",
+      "password": "12345",
+      "email": "sadnan45786@gmail.com"
+    },
+    {
+      "id": "3795",
+      "name": "Adnan sayyed",
+      "password": "007",
+      "email": "sadnan45786@gmail.com"
     }
   ],
   "products": [
     {
-      "name": "Samsung m 40 a ",
-      "price": "550",
-      "category": "mobile",
+      "name": "Levi's Denim Jacket",
+      "price": "4500",
+      "category": "Clothing",
+      "color": "Blue",
+      "description": "Classic Levi's denim jacket, perfect for casual wear.",
+      "image": "https://imgs.search.brave.com/T6vtC_Zsh9m21AmMz4pFzpjvJbCHU8PyA2S5B3s9yQ0/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90aGVn/b29keXZhdWx0LmNv/bS9jZG4vc2hvcC9m/aWxlcy8wREUzRUQw/Ri04ODAzLTRBMjQt/QkNGMy1DOTZFQTc5/Q0I1MkNfNTMweEAy/eC5qcGc_dj0xNzEz/NDU0NTAy",
+      "id": "1"
+    },
+    {
+      "name": "Nike Running T-Shirt",
+      "price": "1200",
+      "category": "Clothing",
+      "color": "Black",
+      "description": "Breathable and comfortable Nike T-shirt for running.",
+      "image": "https://imgs.search.brave.com/csfEaHcbHaYHVbTC_Czq-LCllIF1uSBmy-9HCD3hWzY/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9ydW5u/ZXJjbGljay5jb20v/d3AtY29udGVudC93/ZWJwYy1wYXNzdGhy/dS5waHA_c3JjPWh0/dHBzOi8vbWVkaWEu/cnVubmVyY2xpY2su/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDE4LzA5L25pa2Ut/bGVnZW5kLXNob3J0/LXNsZWV2ZS1tZW4t/ZTE1MzgxNTgwMzU1/NzYtY3VzdG9tNDcw/eDQ3MC5qcGcmbm9j/YWNoZT0x",
+      "id": "2"
+    },
+    {
+      "name": "Adidas Sweatpants",
+      "price": "1800",
+      "category": "Clothing",
       "color": "white",
-      "description": "this is a Samsung product",
-      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOO1JDPUNwcPiqzHYhaL_zpJA0Ymlr6mD9sSgTPad_JYdrk-o",
-      "id": 1
+      "description": "Comfortable sweatpants ideal for workout and lounging.",
+      "image": "https://imgs.search.brave.com/2j4gCMmdHfbCdj4BYfd68aHArP_DFMEq2bfw9QYHWJo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NTFxQjd2alFJMFMu/anBn",
+      "id": "3"
     },
     {
-      "name": "I phone 14",
-      "price": "100000",
-      "category": "mobile",
-      "color": "black",
-      "description": "An Apple Product",
-      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOO1JDPUNwcPiqzHYhaL_zpJA0Ymlr6mD9sSgTPad_JYdrk-o",
-      "id": 2
+      "name": "Zara Casual Shirt",
+      "price": "2500",
+      "category": "Clothing",
+      "color": "Light Green",
+      "description": "Stylish casual shirt from Zara for everyday wear.",
+      "image": "https://imgs.search.brave.com/9pej9IXtkaa__JDB4elzZFWp_AJZ7yKW2YwUoCaxHsc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NzFrc0RwUmlIQ0wu/anBn",
+      "id": "4"
     },
     {
-      "name": "HP Laptop",
-      "price": "50000",
-      "category": "Laptop",
-      "color": "black",
-      "description": "Hp laptop for student and professionals",
-      "image": "https://www.91-cdn.com/hub/wp-content/uploads/2022/07/Top-laptop-brands-in-India.jpg",
-      "id": 3
-    },
-    {
-      "name": "Nike Shoes",
+      "name": "Puma Hoodie",
       "price": "3000",
-      "category": "Shoes",
+      "category": "Clothing",
       "color": "Black",
-      "description": "Best shoes for Running",
-      "image": "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/1eeaacc0-e07c-4024-a5f7-57f2fd23e8a2/air-max-270-g-golf-shoe-Z6vCfs.png",
-      "id": 4
+      "description": "Warm and cozy Puma hoodie, perfect for cold weather.",
+      "image": "https://imgs.search.brave.com/IakXpkg2q9ykEEE2WjOBu9ol2iLaqZAAIAk_w5r1bYg/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NjFGa3MwZW5iQkwu/anBn",
+      "id": "5"
     },
     {
-      "name": "Levies Jeans",
-      "price": "5000",
-      "category": "Jeans",
-      "color": "blue",
-      "description": "Confirmable jeans for man ",
-      "image": "https://www.filmibeat.com/wimg/desktop/2012/12/13548612746596.jpg",
-      "id": 5
+      "name": "H&M Jeans",
+      "price": "2200",
+      "category": "Clothing",
+      "color": "Dark Blue",
+      "description": "Slim fit jeans from H&M, made from high-quality denim.",
+      "image": "https://imgs.search.brave.com/h6yX86jNc71Q1MqDDtAQhq95T25wisukzFm_-j2nMRA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9kaTJw/b252MHY1b3R3LmNs/b3VkZnJvbnQubmV0/L3Bvc3RzLzIwMjQv/MDkvMDYvNjZkYjg2/MWMyZDgyOWFiMzlh/ZjM4NzdkL3NfNjZk/Yjg2MWMyZDgyOWFi/MzlhZjM4NzdlLmpw/Zw",
+      "id": "6"
     },
     {
-      "name": "Truck",
-      "price": "Toy",
-      "category": "Toys",
-      "color": "Red",
-      "description": "A toy for 5 year old child",
-      "image": "https://cdn.shopify.com/s/files/1/0011/8367/8476/products/Truck2_1400x.png?v=1662789388",
-      "id": 6
-    },
-    {
-      "name": "Noise Smart Watch",
-      "price": "2000",
-      "category": "Watch",
+      "name": "Under Armour Tank Top",
+      "price": "900",
+      "category": "Clothing",
       "color": "Black",
-      "description": "Noise smart watch for man and women both",
-      "image": "https://www.reliancedigital.in/medias/Noise-Colorfit-Pro-2-Smart-Watch-491900986-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1MDc0NXxpbWFnZS9qcGVnfGltYWdlcy9oYzkvaDdjLzk1OTE4MjA3NDY3ODIuanBnfDA3MjZlMzkzOTExYzMyNzk5Y2YzOTk0MWFkMjc5YjE5OTlkMDE4NzYzYTg1YzQ2YmNjZjMxYzc5ZDJiYjBlNDg",
-      "id": 7
+      "description": "Under Armour tank top for gym and outdoor activities.",
+      "image": "https://images-cdn.ubuy.co.in/633d7b277c7c1f4a567619ae-under-armour-gameday-3-pad-tank-bball.jpg",
+      "id": "7"
+    },
+    {
+      "name": "Leather Jacket",
+      "price": "900",
+      "category": "Clothing",
+      "color": "Black",
+      "description": "Under Armour tank top for gym and outdoor activities.",
+      "image": "https://m.media-amazon.com/images/I/71VFs2XrDVL._AC_UY350_.jpg",
+      "id": "8"
     }
   ],
   "users": [
@@ -113,25 +164,49 @@
       "name": "anil",
       "email": "anil@user.com",
       "password": "abc123",
-      "id": 1
+      "id": "1"
     },
     {
       "name": "peter",
       "email": "peter@user.com",
       "password": "abc123",
-      "id": 2
+      "id": "2"
     },
     {
       "name": "hyden",
       "email": "hyden@user.com",
       "password": "abc123",
-      "id": 3
+      "id": "3"
     },
     {
       "name": "tony",
       "email": "tony@user.com",
       "password": "abc123",
-      "id": 4
+      "id": "4"
+    },
+    {
+      "id": "30e0",
+      "name": "Adnan sayyed",
+      "email": "sadnan45786@gmail.com",
+      "password": "adnan"
+    },
+    {
+      "id": "0b32",
+      "name": "Adnan sayyed",
+      "email": "sadnan45786@gmail.com",
+      "password": "000"
+    },
+    {
+      "id": "f5da",
+      "name": "Adnan sayyed45",
+      "email": "sadnan45786@gmail.com",
+      "password": "adna9sayyed"
+    },
+    {
+      "id": "0aa4",
+      "name": "Adnan sayyed",
+      "email": "sadnan45786@gmail.com",
+      "password": "007"
     }
   ],
   "cart": [
@@ -145,7 +220,7 @@
       "quantity": 1,
       "productId": 1,
       "userId": 3,
-      "id": 7
+      "id": "7"
     },
     {
       "name": "Levies Jeans",
@@ -157,7 +232,31 @@
       "quantity": 1,
       "productId": 5,
       "userId": 3,
-      "id": 8
+      "id": "8"
+    },
+    {
+      "id": "fd04",
+      "name": "Samsung m 40 a ",
+      "price": "550",
+      "category": "mobile",
+      "color": "white",
+      "description": "this is a Samsung product",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOO1JDPUNwcPiqzHYhaL_zpJA0Ymlr6mD9sSgTPad_JYdrk-o",
+      "quantity": 2,
+      "productId": "1",
+      "userId": "30e0"
+    },
+    {
+      "id": "9f6e",
+      "name": "Levi's Denim Jacket",
+      "price": "4500",
+      "category": "Clothing",
+      "color": "Blue",
+      "description": "Classic Levi's denim jacket, perfect for casual wear.",
+      "image": "https://imgs.search.brave.com/T6vtC_Zsh9m21AmMz4pFzpjvJbCHU8PyA2S5B3s9yQ0/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90aGVn/b29keXZhdWx0LmNv/bS9jZG4vc2hvcC9m/aWxlcy8wREUzRUQw/Ri04ODAzLTRBMjQt/QkNGMy1DOTZFQTc5/Q0I1MkNfNTMweEAy/eC5qcGc_dj0xNzEz/NDU0NTAy",
+      "quantity": 3,
+      "productId": "1",
+      "userId": "0aa4"
     }
   ],
   "orders": [
@@ -167,7 +266,7 @@
       "contact": "9999",
       "totalPrice": 104750,
       "userId": 1,
-      "id": 1
+      "id": "1"
     },
     {
       "email": "anil@test.com",
@@ -175,7 +274,7 @@
       "contact": "8877",
       "totalPrice": 6100,
       "userId": 1,
-      "id": 3
+      "id": "3"
     }
   ]
 }

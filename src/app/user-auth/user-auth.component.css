@@ -1,14 +1,128 @@
-.user-auth h1{
-    margin-top: 50px;
-    margin-bottom: 80px;
-    color: blueviolet;  
-    text-align: center; 
+/* Sign-up and Login Form Container */
+.sign-up,
+.login {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Slightly darker shadow for better contrast */
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  opacity: 0; /* For fade-in effect */
+  transform: translateY(30px); /* Start slightly below */
+  animation: fadeInUp 1s ease forwards; /* Smooth fade-in and slide-up */
 }
 
-.user-auth {
-    margin-bottom: 100px;
+/* Header for Forms */
+.sign-up h1,
+.login h1 {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  color: #333;
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 1s 0.5s ease forwards; /* Delayed fade-in for header */
 }
-.user-auth a{
-    color: blueviolet;
-    cursor: pointer;
+
+/* Toggle Link */
+.auth-toggle-link {
+  color: #007185;
+  font-size: 14px;
+  margin-top: 20px;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  margin-left: 10px;
+  text-decoration: none;
+  opacity: 0;
+  animation: fadeIn 1s 0.7s ease forwards; /* Delayed fade-in for link */
+}
+
+.auth-toggle-link:hover {
+  color: #005f6e;
+}
+
+/* Form Fields */
+form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #fff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  animation: fadeInUp 1s 0.6s ease forwards; /* Delayed slide-in for inputs */
+}
+
+form input:focus {
+  border-color: #007185;
+  box-shadow: 0 0 5px rgba(0, 113, 133, 0.1);
+  outline: none;
+}
+
+/* Form Button */
+form button {
+  width: 100%;
+  padding: 7px; /* Increased padding for better clickability */
+  background-color: #007185;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+  opacity: 0;
+  animation: fadeInUp 1s 0.8s ease forwards; /* Delayed slide-in for button */
+}
+p {
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #005f6e;
+  transform: translateY(-2px); /* Subtle lift on hover */
+}
+
+/* Keyframes for Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 5;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sign-up,
+  .login {
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .sign-up h1,
+  .login h1 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
 }

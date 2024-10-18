@@ -1,80 +1,77 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { product } from '../data-type';
 import { ProductService } from '../services/product.service';
+import { product } from '../data-type';
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit {
-  menuType: string = 'default';
-  sellerName:string="";
-  userName:string="";
-  searchResult:undefined|product[];
-  cartItems=0;
-  constructor(private route: Router, private product:ProductService) {}
+  userName: string = '';
+  cartItems = 0;
+  searchResult: undefined | product[];
+  isMenuOpen = false; // Property to track the menu state
+
+  // Method to toggle the hamburger menu
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen; // Toggle the boolean value
+  }
+
+  constructor(private route: Router, private product: ProductService) {}
 
   ngOnInit(): void {
-    this.route.events.subscribe((val: any) => {
-      if (val.url) {
-        if (localStorage.getItem('seller') && val.url.includes('seller')) {
-         let sellerStore=localStorage.getItem('seller');
-         let sellerData =sellerStore && JSON.parse(sellerStore)[0];
-         this.sellerName=sellerData.name;
-          this.menuType = 'seller';
-        }
-        else if(localStorage.getItem('user')){
-          let userStore = localStorage.getItem('user');
-          let userData = userStore && JSON.parse(userStore);
-          this.userName= userData.name;
-          this.menuType='user';
-          this.product.getCartList(userData.id);
-        }
-         else {
-          this.menuType = 'default';
-        }
-      }
+    this.updateHeader(); // Initialize header based on user/seller state
+
+    // Subscribe to cart changes
+    const cartData = localStorage.getItem('localCart');
+    if (cartData) {
+      this.cartItems = JSON.parse(cartData).length;
+    }
+
+    this.product.cartData.subscribe((items) => {
+      this.cartItems = items.length;
     });
-    let cartData= localStorage.getItem('localCart');
-    if(cartData){
-      this.cartItems= JSON.parse(cartData).length
-    }
-    this.product.cartData.subscribe((items)=>{
-      this.cartItems= items.length
-    })
-  }
-  logout(){
-    localStorage.removeItem('seller');
-    this.route.navigate(['/'])
   }
 
-  userLogout(){
+  // Function to dynamically update header based on user/seller login
+  updateHeader() {
+    const userStore = localStorage.getItem('user');
+    if (userStore) {
+      const userData = JSON.parse(userStore);
+      this.userName = userData.name;
+      this.product.getCartList(userData.id);
+    }
+  }
+
+  // Handle user logout with a page reload
+  userLogout() {
     localStorage.removeItem('user');
-    this.route.navigate(['/user-auth'])
-    this.product.cartData.emit([])
+    this.route.navigate(['/user-auth']).then(() => {
+      location.reload(); // Force page reload after logout
+    });
+    this.product.cartData.emit([]); // Reset cart data
   }
 
-  searchProduct(query:KeyboardEvent){
-    if(query){
+  searchProduct(query: KeyboardEvent) {
+    if (query) {
       const element = query.target as HTMLInputElement;
-      this.product.searchProduct(element.value).subscribe((result)=>{
-       
-        if(result.length>5){
-          result.length=length
-        }
-        this.searchResult=result;
-      })
+      this.product.searchProduct(element.value).subscribe((result) => {
+        this.searchResult = result.length > 5 ? result.slice(0, 5) : result;
+      });
     }
   }
-  hideSearch(){
-    this.searchResult=undefined
+
+  hideSearch() {
+    this.searchResult = undefined;
   }
-  redirectToDetails(id:number){
-    this.route.navigate(['/details/'+id])
+
+  redirectToDetails(id: number) {
+    this.route.navigate(['/details/' + id]);
   }
-  submitSearch(val:string){
-    console.warn(val)
-  this.route.navigate([`search/${val}`]);
+
+  submitSearch(val: string) {
+    this.route.navigate([`search/${val}`]);
   }
 }

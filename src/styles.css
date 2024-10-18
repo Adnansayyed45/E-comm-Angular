@@ -1,9 +1,18 @@
 body {
-  font-family: sans-serif;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  
+  background: linear-gradient(135deg, #b389da, #8ec5fc);
+
+
 }
 .container {
   margin-left: 5%;
   margin-right: 5%;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  background: linear-gradient(135deg, #ba99d9, #8ec5fc);
+
 }
 .common-form {
   display: flex;
@@ -14,13 +23,13 @@ body {
 .form-input {
   height: 35px;
   margin-bottom: 20px;
-  border: 1px solid blueviolet;
+  border: 1px solid rgb(52, 43, 226);
   padding-left: 15px;
-  color: blueviolet;
+  color: black;
 }
 .form-button {
   height: 35px;
-  border: 1px solid blueviolet;
+  border: 1px solid rgb(76, 43, 226);
   color: blueviolet;
   cursor: pointer;
 }
