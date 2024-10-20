@@ -19,8 +19,8 @@ import { UserAuthComponent } from './user-auth/user-auth.component';
 import { CartPageComponent } from './cart-page/cart-page.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { MyOrdersComponent } from './my-orders/my-orders.component';
-import { ContactUsComponent } from './contact-us/contact-us.component';
 import { NgxUiLoaderHttpModule, NgxUiLoaderModule, NgxUiLoaderRouterModule } from 'ngx-ui-loader';
+
 
 @NgModule({
   declarations: [
@@ -38,7 +38,6 @@ import { NgxUiLoaderHttpModule, NgxUiLoaderModule, NgxUiLoaderRouterModule } fro
     CartPageComponent,
     CheckoutComponent,
     MyOrdersComponent,
-    ContactUsComponent
   ],
   imports: [
     BrowserModule,

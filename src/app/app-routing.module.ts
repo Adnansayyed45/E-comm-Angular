@@ -12,7 +12,7 @@ import { SellerAuthComponent } from './seller-auth/seller-auth.component';
 import { SellerHomeComponent } from './seller-home/seller-home.component';
 import { SellerUpdateProductComponent } from './seller-update-product/seller-update-product.component';
 import { UserAuthComponent } from './user-auth/user-auth.component';
-import { ContactUsComponent } from './contact-us/contact-us.component';
+import { ContactUsComponent } from './contact-us/contact-us/contact-us.component';
 
 const routes: Routes = [
   {
@@ -36,6 +36,7 @@ const routes: Routes = [
     path:'seller-update-product/:id',
     canActivate:[AuthGuard]
   },
+  { path: 'contact-us', loadChildren: () => import('./contact-us/contact-us.module').then(m => m.ContactUsModule) }, // Lazy load ContactUsModule
   {
     component: SearchComponent,
     path:'search/:query'
