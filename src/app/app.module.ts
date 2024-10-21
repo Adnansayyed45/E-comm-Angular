@@ -20,6 +20,8 @@ import { CartPageComponent } from './cart-page/cart-page.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { MyOrdersComponent } from './my-orders/my-orders.component';
 import { NgxUiLoaderHttpModule, NgxUiLoaderModule, NgxUiLoaderRouterModule } from 'ngx-ui-loader';
+import { SellerHeaderComponent } from './seller-header/seller-header.component';
+import { ContactUsModule } from './contact-us/contact-us.module';
 
 
 @NgModule({
@@ -38,6 +40,7 @@ import { NgxUiLoaderHttpModule, NgxUiLoaderModule, NgxUiLoaderRouterModule } fro
     CartPageComponent,
     CheckoutComponent,
     MyOrdersComponent,
+    SellerHeaderComponent,
   ],
   imports: [
     BrowserModule,
@@ -47,6 +50,7 @@ import { NgxUiLoaderHttpModule, NgxUiLoaderModule, NgxUiLoaderRouterModule } fro
     HttpClientModule,
     FontAwesomeModule,
     NgbModule,
+    ContactUsModule,
     NgxUiLoaderModule,
     NgxUiLoaderRouterModule,
     NgxUiLoaderHttpModule.forRoot({

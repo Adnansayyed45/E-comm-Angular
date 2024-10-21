@@ -26,7 +26,9 @@ invalidUserAuth= new EventEmitter<boolean>(false)
     ).subscribe((result)=>{
       if(result && result.body?.length){
         localStorage.setItem('user',JSON.stringify(result.body[0]));
-        this.router.navigate(['/']);
+        this.router.navigate(['/']).then(() => {
+          location.reload(); 
+      })
         this.invalidUserAuth.emit(false)
       }else{
         this.invalidUserAuth.emit(true)

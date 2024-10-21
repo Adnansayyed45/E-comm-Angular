@@ -24,43 +24,53 @@ const routes: Routes = [
     path: 'seller-auth',
   },
   {
-    component:SellerHomeComponent,
-    path:'seller-home',
-    canActivate:[AuthGuard]
-  },{
-    component:SellerAddProductComponent,
-    path:'seller-add-product',
-    canActivate:[AuthGuard]
-  },{
-    component:SellerUpdateProductComponent,
-    path:'seller-update-product/:id',
-    canActivate:[AuthGuard]
+    component: SellerHomeComponent,
+    path: 'seller-home',
+    canActivate: [AuthGuard],
   },
-  { path: 'contact-us', loadChildren: () => import('./contact-us/contact-us.module').then(m => m.ContactUsModule) }, // Lazy load ContactUsModule
+  {
+    component: SellerAddProductComponent,
+    path: 'seller-add-product',
+    canActivate: [AuthGuard],
+  },
+  {
+    component: SellerUpdateProductComponent,
+    path: 'seller-update-product/:id',
+    canActivate: [AuthGuard],
+  },
+  {
+    path: 'contact-us',
+    loadChildren: () =>
+      import('./contact-us/contact-us.module').then((m) => m.ContactUsModule),
+  }, // Lazy load ContactUsModule
   {
     component: SearchComponent,
-    path:'search/:query'
-  },{
-    component:ProductDetailsComponent,
-    path:'details/:productId'
-  },{
-    component:UserAuthComponent,
-    path:'user-auth'
-  },{
-    component:CartPageComponent,
-    path:'cart-page'
-  },{
-    component:CheckoutComponent,
-    path:'checkout'
-  },{
-    component:MyOrdersComponent,
-    path:'my-orders'
+    path: 'search/:query',
   },
   {
-    path:'contact-us',
-    component:ContactUsComponent
-  }
-
+    component: ProductDetailsComponent,
+    path: 'details/:productId',
+  },
+  {
+    component: UserAuthComponent,
+    path: 'user-auth',
+  },
+  {
+    component: CartPageComponent,
+    path: 'cart-page',
+  },
+  {
+    component: CheckoutComponent,
+    path: 'checkout',
+  },
+  {
+    component: MyOrdersComponent,
+    path: 'my-orders',
+  },
+  {
+    path: 'contact-us',
+    component: ContactUsComponent,
+  },
 ];
 
 @NgModule({

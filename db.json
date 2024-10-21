@@ -83,6 +83,24 @@
       "name": "Adnan sayyed",
       "password": "007",
       "email": "sadnan45786@gmail.com"
+    },
+    {
+      "id": "432f",
+      "name": "Adnan sayyed",
+      "password": "786",
+      "email": "sadnan45786@gmail.com"
+    },
+    {
+      "id": "17d3",
+      "name": "Adnan sayyed",
+      "password": "786",
+      "email": "sadnan45786@gmail.com"
+    },
+    {
+      "id": "c868",
+      "name": "Adnan sayyed",
+      "password": "7860",
+      "email": "sadnan45786@gmail.com"
     }
   ],
   "products": [
@@ -130,15 +148,6 @@
       "description": "Warm and cozy Puma hoodie, perfect for cold weather.",
       "image": "https://imgs.search.brave.com/IakXpkg2q9ykEEE2WjOBu9ol2iLaqZAAIAk_w5r1bYg/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NjFGa3MwZW5iQkwu/anBn",
       "id": "5"
-    },
-    {
-      "name": "H&M Jeans",
-      "price": "2200",
-      "category": "Clothing",
-      "color": "Dark Blue",
-      "description": "Slim fit jeans from H&M, made from high-quality denim.",
-      "image": "https://imgs.search.brave.com/h6yX86jNc71Q1MqDDtAQhq95T25wisukzFm_-j2nMRA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9kaTJw/b252MHY1b3R3LmNs/b3VkZnJvbnQubmV0/L3Bvc3RzLzIwMjQv/MDkvMDYvNjZkYjg2/MWMyZDgyOWFiMzlh/ZjM4NzdkL3NfNjZk/Yjg2MWMyZDgyOWFi/MzlhZjM4NzdlLmpw/Zw",
-      "id": "6"
     },
     {
       "name": "Under Armour Tank Top",
@@ -207,6 +216,18 @@
       "name": "Adnan sayyed",
       "email": "sadnan45786@gmail.com",
       "password": "007"
+    },
+    {
+      "id": "925f",
+      "name": "Adnan sayyed",
+      "email": "sadnan45786@gmail.com",
+      "password": "786"
+    },
+    {
+      "id": "e386",
+      "name": "",
+      "email": "",
+      "password": ""
     }
   ],
   "cart": [

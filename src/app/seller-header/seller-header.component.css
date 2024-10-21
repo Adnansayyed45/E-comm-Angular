@@ -1,0 +1,138 @@
+/* Seller Header Styles */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #121212;
+    padding: 10px;
+    border-bottom: 2px solid #ff4081;
+    position: relative;
+    z-index: 1000;
+    min-width: 320px; /* Prevent shrinking too much */
+  }
+  
+  .logo a {
+    color: white!important; /* Force color change */
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-decoration: none; /* Remove default link underline */
+  }
+  
+  .logo a:hover {
+    color: #ff4081 !important; /* Force hover color change */
+    transform: scale(1.1);
+  }
+  
+  .nav h1 {
+    color: #ff4081;
+    margin: 0;
+    font-size: 24px;
+    flex-grow: 1; /* Ensure the logo grows in proportion */
+  }
+  
+  .nav .nav-search {
+    flex-grow: 2; /* Allow the search bar to take more space */
+    display: flex;
+    margin: 0 20px;
+  }
+  
+  .nav .nav-search input {
+    flex: 1;
+    color: #fff;
+    background-color: #222;
+    border: 1px solid #ff4081;
+    padding: 8px;
+    border-radius: 5px 0 0 5px;
+    font-size: 14px;
+  }
+  
+  .nav .nav-search button {
+    background-color: #ff4081;
+    color: #fff;
+    border: 1px solid #ff4081;
+    padding: 8px;
+    border-radius: 0 5px 5px 0;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+  }
+  
+  .nav ul li {
+    padding-left: 20px;
+  }
+  
+  .nav ul a {
+    color: #ff4081;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav ul a:hover {
+    color: #e040fb;
+  }
+  
+  /* Hamburger Menu */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .hamburger span {
+    height: 3px;
+    background: #ff4081;
+    margin: 5px 0;
+    width: 25px;
+  }
+  
+  @media (max-width: 768px) {
+    .nav ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #121212;
+      width: 100%;
+      text-align: right;
+      padding: 15px;
+    }
+  
+    .nav ul li {
+      padding: 10px 0;
+    }
+  
+    .nav ul.show {
+      display: block;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  }
+  
+  /* Additional styles for seller-specific links */
+  .nav ul li a.logout {
+    color: #f44336;
+  }
+  
+  .nav ul li a.logout:hover {
+    color: #d32f2f;
+  }
+  
+  .nav ul li a.seller-name {
+    font-weight: bold;
+    color: orange;
+  }

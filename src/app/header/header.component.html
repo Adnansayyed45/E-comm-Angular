@@ -1,4 +1,4 @@
-<!-- <nav class="nav">
+<!-- <!-- <!-- <nav class="nav">
   <h1><a routerLink="">E-Comm</a> </h1>
   <div *ngIf="menuType!=='seller'" class="nav-search">
     <input type="text" #searchInput (keyup)="searchProduct($event)" (blur)="hideSearch()"
@@ -34,9 +34,8 @@
   </div>
 </nav> -->
 
-
 <nav class="nav">
-  <h1><a routerLink="">E-Comm</a></h1>
+  <h3 class="logo"><a routerLink="">E-Shopp</a></h3>
   
   <div class="nav-search">
     <input type="text" #searchInput (keyup)="searchProduct($event)" (blur)="hideSearch()" placeholder="Search Products" />
@@ -52,6 +51,7 @@
   <button class="hamburger" (click)="toggleMenu()">
     <div></div>
     <div></div>
+    
     <div></div>
   </button>
 
@@ -71,4 +71,4 @@
       <li><a routerLink="contact-us">Contact Us</a></li>
     </ng-template>
   </ul>
-</nav>
+</nav>  

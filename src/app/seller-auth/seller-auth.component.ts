@@ -16,15 +16,17 @@ export class SellerAuthComponent implements OnInit {
     this.seller.reloadSeller()
   }
   signUp(data: signUp): void {
-    console.log(data);
+    console.warn(data);
     this.seller.userSignUp(data);
   }
   login(data: signUp): void {
     this.seller.userLogin(data);
     this.seller.isLoginError.subscribe((isError)=>{
+      
       if(isError){
         this.authError="Email or password is not correct";
       }
+      
     })
   }
   openLogin(){
