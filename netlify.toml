@@ -1,0 +1,10 @@
+[build]
+base = "/"
+publish = "dist/angular-e-com"  # This should point to your output directory
+command = "npm run build"
+
+
+ [[redirects]]
+ from = "/*"
+ to = "/index.html"
+ status = 200
