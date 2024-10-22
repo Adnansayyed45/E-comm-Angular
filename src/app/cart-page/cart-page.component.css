@@ -1,20 +1,30 @@
-.cart-page{
+.cart-page {
     margin-top: 40px;
     margin-bottom: 50px;
+    animation: fadeIn 1s ease-in-out;
 }
-.cart-page h1{
+
+.cart-page h1 {
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
- 
+    animation: slideDown 1s ease-in-out;
 }
-.details {
-    /* display: flex;
-    justify-content: space-between; */
-}
-.details img{
+
+.details img {
     height: 100px;
+    transition: transform 0.3s ease;
 }
-.details ul{
+
+.details img:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+#t1 ul {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.details ul {
     padding: 0;
     margin: 0;
     list-style-type: none;
@@ -23,18 +33,62 @@
     border: 1px solid #ddd;
     padding: 15px;
     margin-bottom: 15px;
-    
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
-.summary h3{
+
+.details ul:hover {
+    background-color: #f9f9f9; /* Change background on hover */
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.summary h3 {
     text-align: center;
+    animation: slideDown 1s ease-in-out;
 }
 
 .summary ul {
     border: 1px solid #ddd;
     list-style-type: none;
     padding: 15px;
+    animation: fadeIn 1s ease-in-out;
 }
-.summary ul li{
+
+.summary ul li {
     display: flex;
     justify-content: space-between;
+    transition: background-color 0.3s ease;
+}
+
+.summary ul li:hover {
+    background-color: #f0f0f0; /* Change background on hover */
+}
+
+#t2 ul{
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#btn{
+    color: white;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }

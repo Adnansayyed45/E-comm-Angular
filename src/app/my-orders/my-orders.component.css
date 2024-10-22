@@ -1,19 +1,98 @@
-.my-orders{
+.my-orders {
     margin-bottom: 100px;
+    animation: fadeIn 1s ease-in-out;
 }
-.my-orders h1{
+
+.my-orders h1 {
     margin-top: 50px;
     margin-bottom: 50px;
     text-align: center;
-}
-.my-orders .order-img{
-    width: 100px;
+    font-family: 'Georgia', serif;
+    font-size: 2.5rem;
+    color: #333;
+    animation: slideDown 1s ease-in-out;
 }
 
-.my-orders .row{
+.my-orders .order-img {
+    width: 100px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.my-orders .order-img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect on hover */
+}
+#row1{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.my-orders .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin-top: 15px;
     margin-bottom: 15px;
-    padding-bottom: 10px;
-    border-bottom:1px solid #ddd;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    animation: fadeInUp 0.8s ease-in-out;
+}
 
+.my-orders .row:hover {
+    background-color: #f0f0f0; /* Change background on hover */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Add subtle shadow on hover */
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.my-orders .order-details {
+    flex-grow: 1;
+    padding-left: 20px;
+}
+
+.my-orders .order-details h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.my-orders .order-details p {
+    font-size: 1rem;
+    color: #666;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
