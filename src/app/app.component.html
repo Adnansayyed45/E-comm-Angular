@@ -2,13 +2,13 @@
   fgsType="fading-circle">
 </ngx-ui-loader>
 
+<ng-container *ngIf="isSeller; else userHeader">
+  <app-seller-header></app-seller-header>
+</ng-container>
+<ng-template #userHeader>
+  <app-header></app-header>
+</ng-template>
 <div class="container" ngxUiLoaderBlurred="10">
-  <ng-container *ngIf="isSeller; else userHeader">
-    <app-seller-header></app-seller-header>
-  </ng-container>
-  <ng-template #userHeader>
-    <app-header></app-header>
-  </ng-template>
   <router-outlet></router-outlet>
 </div>
 <app-footer></app-footer>

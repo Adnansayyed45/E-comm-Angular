@@ -1,6 +1,6 @@
 [build]
 base = "/"
-publish = "dist/E-comm-Angular"  # This should point to your output directory
+publish = "dist/ecomm-project"  # This should point to your output directory
 command = "npm run build"
 
 
